@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minha Casa Segura</title>
+    <style>
+/*
+      Limpando formatação padrão
+*/
+      * {
+        padding: 0;
+        margin: 0;
+      }
+
+/*
+      Body
+*/ 
+
+      body {
+        background-image: linear-gradient(to bottom, #ffffff, #3e7b09);
+        font-size: 1em;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+        height: 60em;
+      }
+
+/*
+      Layout
+*/
+      #container {
+        width: 615px;
+        margin: 0 auto;
+      }
+
+      .title {
+        color: #3e7b09;
+        text-align: center;
+        font-size: 1.5em;
+        padding: 15px 10px;
+        letter-spacing: -0.9px;
+      }
+
+    .subtitle {
+        width: 100%;
+        text-align: center;
+        color: #346f00;
+        padding: 8px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;   
+        letter-spacing: 1.2px;   
+    }
+
+    .nav {
+        text-align: right;
+        color: #346f00;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        padding: 5px 7px;
+    }
+
+    .acesso {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .acesso h1 {
+        text-align: center;
+        color: #346f00;
+    }
+
+    #rodape {
+        clear: both;
+        text-align: center;
+        padding: 15px;
+        color: #ccc;
+      }
+
+/*
+    Formulário
+*/
+    form {
+        display: flex;
+        flex-direction: column;
+        background-color: #f3eeee;
+        border-radius: 7px;
+        padding: 40px;
+        box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.4);
+        gap: 5px
+    }
+
+    input {
+        padding: 18px;
+        margin: 5px;
+    }
+
+    .botão:hover {
+        background-color: #346f00;
+        color: #fff;
+    }
+ 
+/*  
+    Links
+*/
+      a {
+        text-decoration: none;
+      }
+
+      a:link,
+      a:visited {
+        color: #3e7b09;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .nav a:link,
+      .nav a:visited {
+        color: #3e7b09;
+        padding: 2px;
+      }
+    </style>
+  </head>
+  <body>
+   <div id="container">
+    <header class="title">
+        <h1>Minha Casa Segura</h1>
+
+        <section class="subtitle">
+            <h6>
+                Sua visão em tempo real para a segurança residencial.
+            </h6>
+          </section>
+    </header>
+
+    <nav class="nav">
+        <a href="index.html">Voltar</a> |
+        <a href="">Sair</a>
+    </nav>
+
+    <section class="acesso">
+        <form>
+            <h1>Login</h1>
+            <p>Digite os seus dados de acesso no campo abaixo.</p>
+            <input type="email" placeholder="Digite seu e-mail" autofocus="true" />
+            <input type="password" placeholder="Digite sua senha" />
+            <a href="">Esqueci minha senha</a>
+            <input type="submit" value="Acessar" class="botão" />
+        </form>
+    </section>
+  
+    <footer id="rodape">Todos os direitos reservados</footer>
+  </body>
+</html>
